@@ -99,11 +99,11 @@
               <img src="<?= base_url('assets/admin') ?>/images/faces/face28.jpg" alt="profile"/>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item">
+              <a href="<?= base_url('admin/Settings');?>" class="dropdown-item">
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
+              <a href="<?= base_url('Login/logout');?>" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -117,19 +117,19 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="<?= base_url('admin/Dashboard');?>">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="<?= base_url('admin/Katalog');?>">
               <i class="icon-paper menu-icon"></i>
-              <span class="menu-title">Documentation</span>
+              <span class="menu-title">Manajemen Katalog</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="<?= base_url('admin/Pesanan');?>">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Manajemen Pesanan</span>
             </a>

@@ -17,7 +17,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="<?= base_url('assets/admin') ?>/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="<?= base_url('assets/landing') ?>/img/logo2.png" alt="logo" />
+  <link rel="shortcut icon" href="<?= base_url('assets/landing') ?>/img/logo2.png" />
 </head>
 
 <body>
@@ -32,15 +32,22 @@
               </div>
               <h4>Hello! let's get started</h4>
               <h6 class="font-weight-light">Sign in to continue.</h6>
-              <form class="pt-3">
+
+              <?= $this->session->flashdata('message'); ?>
+
+              <form class="pt-3" action="<?= base_url('Login');?>" method="post">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" name="email" placeholder="Username" required>
+                  
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" name="password" placeholder="Password" required>
                 </div>
+                
                 <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="<?= base_url('admin/Dashboard') ?>">SIGN IN</a>
+
+                  <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">SIGN IN</button>
+                  
                 </div>
               </form>
             </div>

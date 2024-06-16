@@ -20,14 +20,17 @@
   <link rel="stylesheet" href="<?= base_url('assets/admin') ?>/css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="<?= base_url('assets/landing') ?>/img/logo2.png" />
+  <!-- include summernote css/js -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 </head>
+
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-1" href="<?= base_url('assets/admin') ?>/index.html"><img src="<?= base_url('assets/landing') ?>/img/logo2.png" class="mr-2" alt="logo"/>JWP</a>
-        <a class="navbar-brand brand-logo-mini" href="<?= base_url('assets/admin') ?>/index.html"><img src="<?= base_url('assets/landing') ?>/img/logo2.png" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-1" href="<?= base_url('assets/admin') ?>/index.html"><img src="<?= base_url('assets/landing') ?>/img/logo2.png" class="mr-2" alt="logo" />JWP</a>
+        <a class="navbar-brand brand-logo-mini" href="<?= base_url('assets/admin') ?>/index.html"><img src="<?= base_url('assets/landing') ?>/img/logo2.png" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -96,14 +99,14 @@
           </li>
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="<?= base_url('assets/admin') ?>/#" data-toggle="dropdown" id="profileDropdown">
-              <img src="<?= base_url('assets/admin') ?>/images/faces/face28.jpg" alt="profile"/>
+              <img src="<?= base_url('assets/admin') ?>/images/faces/face28.jpg" alt="profile" />
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-              <a href="<?= base_url('admin/Settings');?>" class="dropdown-item">
+              <a href="<?= base_url('admin/Settings'); ?>" class="dropdown-item">
                 <i class="ti-settings text-primary"></i>
                 Settings
               </a>
-              <a href="<?= base_url('Login/logout');?>" class="dropdown-item">
+              <a href="<?= base_url('Login/logout'); ?>" class="dropdown-item">
                 <i class="ti-power-off text-primary"></i>
                 Logout
               </a>
@@ -117,19 +120,19 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin/Dashboard');?>">
+            <a class="nav-link" href="<?= base_url('admin/Dashboard'); ?>">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
-          </li>  
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin/Katalog');?>">
+            <a class="nav-link" href="<?= base_url('admin/Katalog'); ?>">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Manajemen Katalog</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin/Pesanan');?>">
+            <a class="nav-link" href="<?= base_url('admin/Pesanan'); ?>">
               <i class="icon-paper menu-icon"></i>
               <span class="menu-title">Manajemen Pesanan</span>
             </a>
@@ -139,19 +142,19 @@
       <!-- partial -->
       <div class="main-panel">
 
-      <?php $this->load->view($page);?>
+        <?php $this->load->view($page); ?>
 
-         <!-- partial:partials/_footer.html -->
-         <footer class="footer">
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024.  JeWePe Wedding Organizer</span>
-           
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2024. JeWePe Wedding Organizer</span>
+
           </div>
-        </footer> 
+        </footer>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
-    </div>   
+    </div>
     <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
@@ -177,7 +180,14 @@
   <script src="<?= base_url('assets/admin') ?>/js/dashboard.js"></script>
   <script src="<?= base_url('assets/admin') ?>/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+  <script>
+    $('#editor').summernote({
+      height: 200
+    });
+  </script>
 </body>
 
 </html>
-

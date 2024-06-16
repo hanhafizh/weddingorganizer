@@ -1,197 +1,74 @@
 <div class="content-wrapper">
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-              <div class="row">
-                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                  <h3 class="font-weight-bold">Welcome Pesanan</h3>
-                  <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6>
-                </div>
-                <div class="col-12 col-xl-4">
-                 <div class="justify-content-end d-flex">
-                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     <i class="mdi mdi-calendar"></i> Today (10 Jan 2021)
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
-                      <a class="dropdown-item" href="<?= base_url('assets/admin') ?>/#">January - March</a>
-                      <a class="dropdown-item" href="<?= base_url('assets/admin') ?>/#">March - June</a>
-                      <a class="dropdown-item" href="<?= base_url('assets/admin') ?>/#">June - August</a>
-                      <a class="dropdown-item" href="<?= base_url('assets/admin') ?>/#">August - November</a>
-                    </div>
-                  </div>
-                 </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Bordered table</h4>
-                  <p class="card-description">
-                    Add class <code>.table-bordered</code>
-                  </p>
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>
-                            #
-                          </th>
-                          <th>
-                            First name
-                          </th>
-                          <th>
-                            Progress
-                          </th>
-                          <th>
-                            Amount
-                          </th>
-                          <th>
-                            Deadline
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            1
-                          </td>
-                          <td>
-                            Herman Beck
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            2
-                          </td>
-                          <td>
-                            Messsy Adam
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $245.30
-                          </td>
-                          <td>
-                            July 1, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            3
-                          </td>
-                          <td>
-                            John Richards
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $138.00
-                          </td>
-                          <td>
-                            Apr 12, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            4
-                          </td>
-                          <td>
-                            Peter Meggik
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 77.99
-                          </td>
-                          <td>
-                            May 15, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            5
-                          </td>
-                          <td>
-                            Edward
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 160.25
-                          </td>
-                          <td>
-                            May 03, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            6
-                          </td>
-                          <td>
-                            John Doe
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 123.21
-                          </td>
-                          <td>
-                            April 05, 2015
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            7
-                          </td>
-                          <td>
-                            Henry Tom
-                          </td>
-                          <td>
-                            <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                          </td>
-                          <td>
-                            $ 150.00
-                          </td>
-                          <td>
-                            June 16, 2015
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+  <div class="row">
+    <div class="col-md-12 grid-margin">
+      <div class="row">
+        <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+          <h3 class="font-weight-bold">Manage Order</h3>
+          <h6 class="font-weight-normal mb-0">JeWePe Wedding Organizer</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h4 class="card-title">Data Pesanan Paket Pernikahan</h4>
+    </div>
+    <div class="col-lg-12">
+      <?= $this->session->flashdata('message'); ?>
+    </div>
+  </div>
+
+  <div class="table-responsive pt-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center">No</th>
+          <th class="text-center">Gambar</th>
+          <th class="text-center">Nama Paket</th>
+          <th class="text-center">Nama Pemesan</th>
+          <th class="text-center">Email Pemesan</th>
+          <th class="text-center">Status</th>
+          <th class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <?php
+        $no = 1;
+        foreach ($getAllPesanan as $row) :
+        ?>
+          <tr>
+            <td class="text-center">
+              <?= $no++; ?>
+            </td>
+            <td class="text-center">
+              <a href="<?= base_url('assets/files/katalog/') . $row->image; ?>" target="_blank">
+                <img src="<?= base_url('assets/files/katalog/') . $row->image; ?>" class="img-fluid" style="border-radius:10%; width:60px; height:60px;" alt="">
+              </a>
+            </td>
+            <td><?= $row->package_name; ?></td>
+            <td class="text-center"><?= $row->name; ?></td>
+            <td class="text-center"><?= $row->email; ?></td>
+            <td class="text-center">
+              <?php if ($row->status == 'requested') {
+                echo '<div class="badge badge-primary">Menunggu Konfirmasi</div>';
+              } else {
+                echo '<div class="badge badge-success">Pesanan Diterima</div>';
+              } ?>
+            </td>
+            <td class="text-center">
+              <?php if ($row->status == 'requested') { ?>
+                <a class="btn btn-sm btn-info" href="<?= base_url('admin/Pesanan/updateStatus?status=approved&id=') . $row->order_id; ?>" title="Edit">Terima</a>
+              <?php } else { ?>
+                <a class="btn btn-sm btn-warning" href="<?= base_url('admin/Pesanan/updateStatus?status=requested&id=') . $row->order_id; ?>" title="Edit">Batalkan</a>
+              <?php } ?>
+              <a class="btn btn-sm btn-danger" href="<?= base_url('admin/Pesanan/delete?id=') . $row->order_id; ?>" title="Hapus" onclick="if (confirm('Apakah anda yakin akan menghapus Pesanan ini?')) { return true; } else { return false; }">Delete</a>
+            </td>
+          </tr>
+        <?php endforeach; ?>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+</div>

@@ -3,10 +3,6 @@
       <div class="container text-center py-5">
         <h1 class="display-2 text-dark mb-4 animated slideInDown">Detail Paket</h1>
         <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb justify-content-center mb-0">
-            <li class="breadcrumb-item"><a href="<? base_url(''); ?>">Home</a></li>
-            <li class="breadcrumb-item text-dark" aria-current="page">Detail</li>
-          </ol>
         </nav>
       </div>
     </div>
@@ -31,7 +27,7 @@
         </div>
       </div>
       <div class="col-lg-7 ms-auto wow fadeInUp" data-wow-delay="0.1s">
-        <h4 class="mb-4">Tertarik Paket ini? Langsung isi form untuk pesan!</h4>
+        <h4 class="mb-4">Tertarik dengan Paket ini? Langsung isi form untuk pesan!</h4>
         <form action="<?= base_url('Beranda/pesan'); ?>" method="post">
           <input type="hidden" name="id" value="<?= $this->input->get('id'); ?>">
           <div class="row g-3">
